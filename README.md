@@ -99,6 +99,8 @@ haribo_palette("baerchenpaerchen")
 
 ![](figure/baerchenpaerchen-1.png) 
 
+## Need more colors?
+
 If you require more colors than what the palette can deliver, use `type="continuous"` to interpolate on the selected palette
 
 
@@ -115,6 +117,19 @@ haribo_palette("baerchenpaerchen",n=16,type="continuous")
 
 ![](figure/baerchenpaerchen-cont-1.png) 
 
+## I have no clue which candy to pick...
+
+Wanna try some candies but you don't know which one is your favorite? 
+
+
+```r
+# do not provide any value to the name parameter and let fate choose for you!
+# ok, here I kind of manipulate destiny with set.seed
+set.seed(42)
+haribo_palette()
+```
+
+![](figure/random-1.png) 
 
 ## Contribute
 

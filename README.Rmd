@@ -99,6 +99,16 @@ haribo_palette("konfekt",n=12,type="continuous")
 haribo_palette("baerchenpaerchen",n=16,type="continuous")
 ```
 
+## I have no clue which candy to pick...
+
+Wanna try some candies but you don't know which one is your favorite? 
+
+```{r, random}
+# do not provide any value to the name parameter and let fate choose for you!
+# ok, here I kind of manipulate destiny with set.seed
+set.seed(42)
+haribo_palette()
+```
 
 ## Contribute
 

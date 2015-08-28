@@ -30,6 +30,11 @@ haribo_palettes <- list(
 haribo_palette <- function(name, n, type = c("discrete", "continuous")) {
   type <- match.arg(type)
 
+  if (missing(name)) {
+    # pick a palette at random from the ones available
+    name <- sample(names(haribo_palettes),1)
+  }
+
   pal <- haribo_palettes[[name]]
   if (is.null(pal))
     stop("Palette not found.")
