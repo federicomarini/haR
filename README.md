@@ -109,6 +109,13 @@ haribo_palette("konfekt",n=12,type="continuous")
 ![](figure/konfekt-cont-1.png) 
 
 
+```r
+haribo_palette("baerchenpaerchen",n=16,type="continuous")
+```
+
+![](figure/baerchenpaerchen-cont-1.png) 
+
+
 ## Contribute
 
 Want more? Please send an email to marinif@uni-mainz.de, and I'll brew you a new palette with the wished candies - or send a pull request if you did the job already!
