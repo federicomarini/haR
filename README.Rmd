@@ -1,8 +1,20 @@
-# haRibo: Color Palettes Inspired by Haribo Candies
-Federico Marini  
+---  
+   title: "haRibo: Color Palettes Inspired by Haribo Candies"  
+   author: "Federico Marini"  
+   output:  
+     html_document:  
+       keep_md: true  
+---  
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "figure/",
+  fig.height = 2
+)
+```
 
 [![Build Status](https://travis-ci.org/federicomarini/haRibo.png)](https://travis-ci.org/federicomarini/haRibo)  
 
@@ -22,27 +34,19 @@ devtools::install_github("federicomarini/haRibo")
 
 Load the library and see the available palette with
 
-
-```r
+```{r, palettes_dummy}
 library(haRibo)
 
 # See all palettes
 names(haribo_palettes)
-#> [1] "goldbears"   "goldbearsUS" "konfekt"     "picoballa"
 ```
 
 ## Goldbears
 
 The `haribo_palette` command returns a vector of colors, and has its own print method to display the palette generated
 
-
-```r
+```{r, goldbears}
 haribo_palette("goldbears")
-```
-
-![](figure/goldbears-1.png) 
-
-```r
 # usage example
 cols <- haribo_palette("goldbears")
 # and then use cols where you normally require a col parameter 
@@ -50,8 +54,7 @@ cols <- haribo_palette("goldbears")
 
 #### Goldbears in action
 
-
-```r
+```{r, grandbudapest, fig.height = 3}
 library(ggplot2)
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = cut(iris$Sepal.Length,6))) + 
   geom_point(size = 3) + 
@@ -59,44 +62,30 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = cut(iris$Sepal.Length,6))) +
   theme_gray()
 ```
 
-![](figure/grandbudapest-1.png) 
-
 ## Goldbears in the US
 
-
-```r
+```{r, goldbearsUS}
 haribo_palette("goldbearsUS")
 ```
-
-![](figure/goldbearsUS-1.png) 
 
 
 ## Picoballa
 
-
-```r
+```{r, picoballa}
 haribo_palette("picoballa")
 ```
 
-![](figure/picoballa-1.png) 
-
 ## Konfekt
 
-
-```r
+```{r, konfekt}
 haribo_palette("konfekt")
 ```
 
-![](figure/konfekt-1.png) 
-
 If you require more colors than what the palette can deliver, use `type="continuous"` to interpolate on the selected palette
 
-
-```r
+```{r, konfekt-cont}
 haribo_palette("konfekt",n=12,type="continuous")
 ```
-
-![](figure/konfekt-cont-1.png) 
 
 
 ## Contribute
