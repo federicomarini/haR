@@ -7,7 +7,8 @@ haribo_palettes <- list(
   goldbears = c("#D9030B","#FF2E00","#FEAE01","#FFDF00","#F5EFE3","#A6BC1B"),
   goldbearsUS = c("#FB0000","#FEC601","#FEE202","#FAF3D7","#08BF0B"),
   konfekt = c("#79391F","#C1722E","#F8D54B","#E4DEC9","#FB9227","#D96892"),
-  picoballa = c("#DE3135","#70F2FF","#FFBA76","#4B9438","#016565","#FD7D8A","#F5E48A")
+  picoballa = c("#DE3135","#70F2FF","#FFBA76","#4B9438","#016565","#FD7D8A","#F5E48A"),
+  baerchenpaerchen = c("#C9631B","#459B3A","#C5B347","#7C365A","#B64946","#2A8985")
 )
 
 #' A palette generator inspired by the colors of Haribo gummy bears
@@ -19,7 +20,7 @@ haribo_palettes <- list(
 #'   If omitted, uses all colours.
 #' @param name Name of desired palette. Choices are:
 #'   \code{goldbears}, \code{goldbearsUS},  \code{konfekt},
-#'   \code{picoballa}
+#'   \code{picoballa}, \code{baerchenpaerchen}
 #' @param type Either "continuous" or "discrete". Use continuous if you want
 #'   to automatically interpolate between colours.
 #' @return A vector of colours.

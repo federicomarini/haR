@@ -28,7 +28,8 @@ library(haRibo)
 
 # See all palettes
 names(haribo_palettes)
-#> [1] "goldbears"   "goldbearsUS" "konfekt"     "picoballa"
+#> [1] "goldbears"        "goldbearsUS"      "konfekt"         
+#> [4] "picoballa"        "baerchenpaerchen"
 ```
 
 ## Goldbears
@@ -88,6 +89,15 @@ haribo_palette("konfekt")
 ```
 
 ![](figure/konfekt-1.png) 
+
+## Bärchen Pärchen
+
+
+```r
+haribo_palette("baerchenpaerchen")
+```
+
+![](figure/baerchenpaerchen-1.png) 
 
 If you require more colors than what the palette can deliver, use `type="continuous"` to interpolate on the selected palette
 
