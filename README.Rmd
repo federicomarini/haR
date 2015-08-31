@@ -87,6 +87,12 @@ haribo_palette("konfekt")
 haribo_palette("baerchenpaerchen")
 ```
 
+## Tropifrutti
+
+```{r, tropifrutti}
+haribo_palette("tropifrutti")
+```
+
 ## Need more colors?
 
 If you require more colors than what the palette can deliver, use `type="continuous"` to interpolate on the selected palette

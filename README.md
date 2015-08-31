@@ -29,7 +29,7 @@ library(haRibo)
 # See all palettes
 names(haribo_palettes)
 #> [1] "goldbears"        "goldbearsUS"      "konfekt"         
-#> [4] "picoballa"        "baerchenpaerchen"
+#> [4] "picoballa"        "baerchenpaerchen" "tropifrutti"
 ```
 
 ## Goldbears
@@ -98,6 +98,15 @@ haribo_palette("baerchenpaerchen")
 ```
 
 ![](figure/baerchenpaerchen-1.png) 
+
+## Tropifrutti
+
+
+```r
+haribo_palette("tropifrutti")
+```
+
+![](figure/tropifrutti-1.png) 
 
 ## Need more colors?
 
