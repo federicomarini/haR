@@ -9,7 +9,7 @@ haribo_palette(name, n, type = c("discrete", "continuous"))
 \arguments{
 \item{name}{Name of desired palette. Choices are:
 \code{goldbears}, \code{goldbearsUS},  \code{konfekt},
-\code{picoballa}}
+\code{picoballa}, \code{baerchenpaerchen}, \code{tropifrutti}}
 
 \item{n}{Number of colors desired. If \code{type} is set to "discrete", this
 value will be limited to the number of colors available in the palette.
