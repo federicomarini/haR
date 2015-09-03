@@ -1,9 +1,9 @@
 #' Complete list of palettes
 #'
-#' Use \code{\link{haribo_palette}} to construct palettes of desired length.
+#' Use \code{\link{har_palette}} to construct palettes of desired length.
 #'
 #' @export
-haribo_palettes <- list(
+har_palettes <- list(
   goldbears = c("#D9030B","#FF2E00","#FEAE01","#FFDF00","#F5EFE3","#A6BC1B"),
   goldbearsUS = c("#FB0000","#FEC601","#FEE202","#FAF3D7","#08BF0B"),
   konfekt = c("#79391F","#C1722E","#F8D54B","#E4DEC9","#FB9227","#D96892"),
@@ -28,15 +28,15 @@ haribo_palettes <- list(
 #' @export
 #' @keywords colors
 #'
-haribo_palette <- function(name, n, type = c("discrete", "continuous")) {
+har_palette <- function(name, n, type = c("discrete", "continuous")) {
   type <- match.arg(type)
 
   if (missing(name)) {
     # pick a palette at random from the ones available
-    name <- sample(names(haribo_palettes),1)
+    name <- sample(names(har_palettes),1)
   }
 
-  pal <- haribo_palettes[[name]]
+  pal <- har_palettes[[name]]
   if (is.null(pal))
     stop("Palette not found.")
 

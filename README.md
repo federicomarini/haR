@@ -1,21 +1,20 @@
-# haRibo: Color Palettes Inspired by Haribo Candies
+# haR: Color Palettes Inspired by Haribo Gummy Candies
 Federico Marini  
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 
 
-[![Build Status](https://travis-ci.org/federicomarini/haRibo.png)](https://travis-ci.org/federicomarini/haRibo)  
 
-> haRibo macht KindeR froh, und Rwachsene ebenso!
+> haR macht Rwachsene froh!
 
-A fruity yummy plot is what you want? Then haRibo is the right thing!
+A fruity yummy plot is what you want? Then haR is the right thing!
 
 ## Installation
 
 Install the package by typing
 
 ```R
-devtools::install_github("federicomarini/haRibo")
+devtools::install_github("federicomarini/haR")
 ```
 
 ## Usage
@@ -24,28 +23,28 @@ Load the library and see the available palette with
 
 
 ```r
-library(haRibo)
+library(haR)
 
 # See all palettes
-names(haribo_palettes)
+names(har_palettes)
 #> [1] "goldbears"        "goldbearsUS"      "konfekt"         
 #> [4] "picoballa"        "baerchenpaerchen" "tropifrutti"
 ```
 
 ## Goldbears
 
-The `haribo_palette` command returns a vector of colors, and has its own print method to display the palette generated
+The `har_palette` command returns a vector of colors, and has its own print method to display the palette generated
 
 
 ```r
-haribo_palette("goldbears")
+har_palette("goldbears")
 ```
 
 ![](figure/goldbears-1.png) 
 
 ```r
 # usage example
-cols <- haribo_palette("goldbears")
+cols <- har_palette("goldbears")
 # and then use cols where you normally require a col parameter 
 ```
 
@@ -56,7 +55,7 @@ cols <- haribo_palette("goldbears")
 library(ggplot2)
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = cut(iris$Sepal.Length,6))) + 
   geom_point(size = 3) + 
-  scale_color_manual(values = haribo_palette("goldbears")) + 
+  scale_color_manual(values = har_palette("goldbears")) + 
   theme_gray()
 ```
 
@@ -66,7 +65,7 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = cut(iris$Sepal.Length,6))) +
 
 
 ```r
-haribo_palette("goldbearsUS")
+har_palette("goldbearsUS")
 ```
 
 ![](figure/goldbearsUS-1.png) 
@@ -76,7 +75,7 @@ haribo_palette("goldbearsUS")
 
 
 ```r
-haribo_palette("picoballa")
+har_palette("picoballa")
 ```
 
 ![](figure/picoballa-1.png) 
@@ -85,7 +84,7 @@ haribo_palette("picoballa")
 
 
 ```r
-haribo_palette("konfekt")
+har_palette("konfekt")
 ```
 
 ![](figure/konfekt-1.png) 
@@ -94,7 +93,7 @@ haribo_palette("konfekt")
 
 
 ```r
-haribo_palette("baerchenpaerchen")
+har_palette("baerchenpaerchen")
 ```
 
 ![](figure/baerchenpaerchen-1.png) 
@@ -103,7 +102,7 @@ haribo_palette("baerchenpaerchen")
 
 
 ```r
-haribo_palette("tropifrutti")
+har_palette("tropifrutti")
 ```
 
 ![](figure/tropifrutti-1.png) 
@@ -114,14 +113,14 @@ If you require more colors than what the palette can deliver, use `type="continu
 
 
 ```r
-haribo_palette("konfekt",n=12,type="continuous")
+har_palette("konfekt",n=12,type="continuous")
 ```
 
 ![](figure/konfekt-cont-1.png) 
 
 
 ```r
-haribo_palette("baerchenpaerchen",n=16,type="continuous")
+har_palette("baerchenpaerchen",n=16,type="continuous")
 ```
 
 ![](figure/baerchenpaerchen-cont-1.png) 
@@ -135,7 +134,7 @@ Wanna try some candies but you don't know which one is your favorite?
 # do not provide any value to the name parameter and let fate choose for you!
 # ok, here I kind of manipulate destiny with set.seed
 set.seed(42)
-haribo_palette()
+har_palette()
 ```
 
 ![](figure/random-1.png) 
