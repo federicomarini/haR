@@ -4,6 +4,7 @@ Federico Marini
 
 
 
+[![Build Status](https://travis-ci.org/federicomarini/haR.png)](https://travis-ci.org/federicomarini/haR)  
 
 > haR macht Rwachsene froh!
 
