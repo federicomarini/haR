@@ -6,11 +6,13 @@ Date: 2015-09-03
 Authors@R: person("Federico", "Marini", email = "marinif@uni-mainz.de",
     role = c("aut", "cre"))
 Maintainer: Federico Marini <marinif@uni-mainz.de>
-Description: haR is a palette generator, inspired by the color combinations of 
-	Haribo Gummy Candies. Credits given to Karthik Ram for the package skeleton (wesanderson).
+Description: haR is a palette generator, inspired by the color combinations
+    of Haribo Gummy Candies. Credits given to Karthik Ram for the package skeleton
+    (wesanderson).
 Depends:
-	R (>= 3.0)
+    R (>= 3.0)
 License: MIT + file LICENSE
 LazyData: TRUE
 URL: https://github.com/federicomarini/haR
 BugReports: https://github.com/federicomarini/haR/issues
+RoxygenNote: 5.0.1

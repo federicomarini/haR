@@ -6,6 +6,7 @@
 har_palettes <- list(
   goldbears = c("#D9030B","#FF2E00","#FEAE01","#FFDF00","#F5EFE3","#A6BC1B"),
   goldbearsUS = c("#FB0000","#FEC601","#FEE202","#FAF3D7","#08BF0B"),
+  goldbearsFAN = c("#F7256C","#9B425E","#00B4F3","#8FD92A","#E4FF52","#FFA23A"),
   konfekt = c("#79391F","#C1722E","#F8D54B","#E4DEC9","#FB9227","#D96892"),
   picoballa = c("#DE3135","#70F2FF","#FFBA76","#4B9438","#016565","#FD7D8A","#F5E48A"),
   baerchenpaerchen = c("#C9631B","#459B3A","#C5B347","#7C365A","#B64946","#2A8985"),
@@ -20,7 +21,7 @@ har_palettes <- list(
 #'   value will be limited to the number of colors available in the palette.
 #'   If omitted, uses all colours.
 #' @param name Name of desired palette. Choices are:
-#'   \code{goldbears}, \code{goldbearsUS},  \code{konfekt},
+#'   \code{goldbears}, \code{goldbearsUS}, \code{goldbearsFAN}, \code{konfekt},
 #'   \code{picoballa}, \code{baerchenpaerchen}, \code{tropifrutti}
 #' @param type Either "continuous" or "discrete". Use continuous if you want
 #'   to automatically interpolate between colours.
